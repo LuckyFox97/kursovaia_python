@@ -2,7 +2,7 @@ from datetime import datetime
 import json
 
 def base_json():
-    with open('main/operations.json') as json_file:
+    with open('main_proj/operations.json') as json_file:
         data = json.load(json_file)
     return data
 

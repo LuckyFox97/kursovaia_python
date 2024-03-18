@@ -1,5 +1,5 @@
 import unittest
-from main.main import base_json
+from main_proj.main import base_json
 
 class TestMainFunctions(unittest.TestCase):
 
