@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7831952-5c46-4dae-815e-2d86016c636c" name="Changes" comment="new fix">
-      <change afterPath="$PROJECT_DIR$/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_test/main_test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_proj/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_proj/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_test/main_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_test/main_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_test/operations.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +44,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for main.test_masked_operation.executor": "Run",
     "Python tests.Python tests for main_test.TestMainFunctions.executor": "Run",
     "Python tests.Python tests for main_test.TestMainFunctions.test_base_json.executor": "Run",
+    "Python tests.Python tests for main_test.TestOperations.executor": "Run",
+    "Python tests.Python tests for main_test.TestOperations.test_masked_operation.executor": "Run",
     "Python tests.Python tests for main_test.test_base_json.executor": "Run",
+    "Python tests.Python tests for main_test.test_date_check.executor": "Run",
     "Python tests.Python tests for main_test.test_date_format.executor": "Run",
+    "Python tests.Python tests for main_test.test_discription_operation.executor": "Run",
     "Python tests.Python tests for main_test.test_masked_operation.executor": "Run",
+    "Python tests.Python tests for main_test2.TestBaseJson.test_base_json.executor": "Run",
+    "Python tests.Python tests for main_test2.TestDiscriptionOperation.executor": "Run",
+    "Python tests.Python tests for main_test2.TestDiscriptionOperation.test_discription_operation.executor": "Run",
+    "Python tests.Python tests for main_test2.TestMaskedOperation.test_masked_operation.executor": "Run",
     "Python tests.Python tests in main_test.py.executor": "Run",
+    "Python tests.Python tests in main_test2.py.executor": "Run",
     "Python.main (1).executor": "Run",
+    "Python.main (2).executor": "Run",
     "Python.main.executor": "Run",
     "Python.main_test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -70,52 +80,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="KursovaiiProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main_project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_project/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="KursovaiiProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for main_test.TestMainFunctions" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in main_test2.py">
+    <configuration name="Python tests for main_test2.TestBaseJson.test_base_json" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="KursovaiiProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,11 +92,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_test.TestMainFunctions&quot;" />
+      <option name="_new_target" value="&quot;main_test2.TestBaseJson.test_base_json&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main_test.main_test.TestMainFunctions.test_base_json" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main_test2.TestDiscriptionOperation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="KursovaiiProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,11 +107,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main_test.main_test.TestMainFunctions.test_base_json&quot;" />
+      <option name="_new_target" value="&quot;main_test2.TestDiscriptionOperation&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in main_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main_test2.TestDiscriptionOperation.test_discription_operation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="KursovaiiProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,17 +122,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/main_test/main_test.py&quot;" />
+      <option name="_new_target" value="&quot;main_test2.TestDiscriptionOperation.test_discription_operation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for main_test2.TestMaskedOperation.test_masked_operation" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="KursovaiiProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main_test2.TestMaskedOperation.test_masked_operation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in main_test2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="KursovaiiProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/main_test/main_test2.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python tests.Python tests for main_test.TestMainFunctions" />
-        <item itemvalue="Python tests.Python tests in main_test.py" />
-        <item itemvalue="Python tests.Python tests for main_test.main_test.TestMainFunctions.test_base_json" />
+        <item itemvalue="Python tests.Python tests in main_test2.py" />
+        <item itemvalue="Python tests.Python tests for main_test2.TestMaskedOperation.test_masked_operation" />
+        <item itemvalue="Python tests.Python tests for main_test2.TestBaseJson.test_base_json" />
+        <item itemvalue="Python tests.Python tests for main_test2.TestDiscriptionOperation" />
+        <item itemvalue="Python tests.Python tests for main_test2.TestDiscriptionOperation.test_discription_operation" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +206,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710720823295</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new fix">
+      <option name="closed" value="true" />
+      <created>1710798756007</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710798756007</updated>
+    </task>
+    <task id="LOCAL-00005" summary="new fix">
+      <option name="closed" value="true" />
+      <created>1710798965087</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710798965087</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
