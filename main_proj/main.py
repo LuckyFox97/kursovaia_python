@@ -1,10 +1,13 @@
 from datetime import datetime
 import json
+import os
 
 def base_json():
-    with open('main_proj/operations.json') as json_file:
+    file_path = os.path.join(os.path.dirname(__file__), 'operations.json')
+    with open(file_path) as json_file:
         data = json.load(json_file)
     return data
+
 
 def date_check():
     data1 = base_json()
