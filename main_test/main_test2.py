@@ -1,10 +1,10 @@
 import unittest
-from main_proj.main import masked_operation, base_json, discription_operation
+from main_proj.main import masked_operation, base_json, description_operation
 
 class TestMaskedOperation(unittest.TestCase):
 
     def test_masked_operation(self):
-        data = masked_operation()
+        data = masked_operation(base_json())  # Передаем результат выполнения функции base_json() в качестве аргумента
         self.assertIsInstance(data, str)
         self.assertTrue(len(data) > 0)
 
@@ -21,7 +21,7 @@ class TestMaskedOperation(unittest.TestCase):
 class TestDiscriptionOperation(unittest.TestCase):
 
     def test_discription_operation(self):
-        data = discription_operation()
+        data = description_operation()
         for operation in data:
             if 'description' in operation:
                 self.assertTrue(True)
