@@ -8,19 +8,16 @@ def base_json():
         data = json.load(json_file)
     return data
 
-
-def date_check():
-    data1 = base_json()
-    for operation in data1:
+def date_check(data):
+    for operation in data:
         if 'date' in operation:
             date_str = operation['date']
-            year, month, day = date_str.split('T')[0].split('-')
-            formatted_date = f"{day}.{month}.{year}"
+            operation_date = datetime.fromisoformat(date_str)
+            formatted_date = operation_date.strftime('%d.%m.%Y')
             operation['date'] = formatted_date
-    return data1
+    return data
 
-def discription_operation():
-    data = base_json()
+def description_operation(data):
     for operation in data:
         if 'description' in operation:
             description = operation['description']
@@ -28,11 +25,20 @@ def discription_operation():
             operation['description'] = description
     return data
 
-def masked_operation():
-    data1 = date_check()
-    data = discription_operation()
+def mask_card(card):
+    if "Счет" in card:
+        masked_card = f"Счет {card[-4:]}"
+    else:
+        card_type = card.split(' ')
+        card_number = card[-16:]
+        if len(card_type) == 2:
+            masked_card = f"{card_type[0]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
+        else:
+            masked_card = f"{card_type[0]} {card_type[1]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
+    return masked_card
 
-    sorted_data = [operation for operation in data1 if 'date' in operation and operation.get('state') == 'EXECUTED']
+def masked_operation(data):
+    sorted_data = [operation for operation in data if 'date' in operation and operation.get('state') == 'EXECUTED']
     sorted_data = sorted(sorted_data, key=lambda x: datetime.strptime(x['date'], '%d.%m.%Y'), reverse=False)[-7:]
 
     result = ""
@@ -46,30 +52,25 @@ def masked_operation():
             if "Счет" in from_:
                 masked_from = f"Счет **{from_[-4:]}"
             else:
-                card_type = from_.split(' ')
-                if len(card_type) == 2:
-                    card_number = from_[-16:]
-                    masked_from = f"{card_type[0]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
-                else:
-                    card_number = from_[-16:]
-                    masked_from = f"{card_type[0]} {card_type[1]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
-
+                masked_from = mask_card(from_)
 
             if "Счет" in to_:
                 masked_to = f"Счет **{to_[-4:]}"
             else:
-                card_type = to_.split(' ')
-                if len(card_type) == 2:
-                    card_number = to_[-16:]
-                    masked_to = f"{card_type[0]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
-                else:
-                    card_number = to_[-16:]
-                    masked_to = f"{card_type[0]} {card_type[1]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
+                masked_to = mask_card(to_)
 
             result += f"{operation['date']} {operation['description']}\n{masked_from} -> {masked_to}\n{amount} {currency}\n\n"
 
     return result
 
+
+# Читаем данные из файла один раз
+operations_data = base_json()
+
+# Применяем обработку данных
+operations_data = date_check(operations_data)
+operations_data = description_operation(operations_data)
+
 # Выводим отформатированные данные последних 5 выполненных транзакций
-formatted_transactions = masked_operation()
+formatted_transactions = masked_operation(operations_data)
 print(formatted_transactions)
