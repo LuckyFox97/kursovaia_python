@@ -74,3 +74,4 @@ operations_data = description_operation(operations_data)
 # Выводим отформатированные данные последних 5 выполненных транзакций
 formatted_transactions = masked_operation(operations_data)
 print(formatted_transactions)
+
