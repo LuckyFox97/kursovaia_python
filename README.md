@@ -6,5 +6,5 @@ python main.py
 
 # Тестирование проекта
 Для тестирования проекта выполните следующие команды из командной строки:
-python main_test.py
-python main_test2.py
+python -m unittest test_utils.py
+poetry run pytest —cov
