@@ -1,16 +1,13 @@
-from main_proj.main import base_json, date_check, description_operation, masked_operation
+from main_proj.main import OperationsProcessor
+from datetime import datetime
 
-def main():
-    # Читаем данные из файла один раз
-    operations_data = base_json()
+# Создаем экземпляр класса и обрабатываем данные
+processor = OperationsProcessor()
+processor.date_check()
+processor.description_operation()
 
-    # Применяем обработку данных
-    operations_data = date_check(operations_data)
-    operations_data = description_operation(operations_data)
+# Выводим отформатированные данные последних 5 выполненных транзакций
+formatted_transactions = processor.masked_operation()
+print(formatted_transactions)
 
-    # Выводим отформатированные данные последних 5 выполненных транзакций
-    formatted_transactions = masked_operation(operations_data)
-    print(formatted_transactions)
 
-if __name__ == '__main__':
-    main()
