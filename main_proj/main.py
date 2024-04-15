@@ -34,9 +34,9 @@ class OperationsProcessor:
             card_type = card.split(' ')
             card_number = card[-16:]
             if len(card_type) == 2:
-                masked_card = f"{card_type[0]} {card_number[:4]} {card_number[4:6]} **** {card_number[-4:]}"
+                masked_card = f"{card_type[0]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
             else:
-                masked_card = f"{card_type[0]} {card_type[1]} {card_number[:4]} {card_number[4:6]} **** {card_number[-4:]}"
+                masked_card = f"{card_type[0]} {card_type[1]} {card_number[:4]} {card_number[4:6]}** **** {card_number[-4:]}"
         return masked_card
 
     def masked_operation(self):
@@ -52,12 +52,12 @@ class OperationsProcessor:
                 currency = operation['operationAmount']['currency']['name']
 
                 if "Счет" in from_:
-                    masked_from = f"Счет {from_[-4:]}"
+                    masked_from = f"Счет **{from_[-4:]}"
                 else:
                     masked_from = self.mask_card(from_)
 
                 if "Счет" in to_:
-                    masked_to = f"Счет {to_[-4:]}"
+                    masked_to = f"Счет **{to_[-4:]}"
                 else:
                     masked_to = self.mask_card(to_)
 
