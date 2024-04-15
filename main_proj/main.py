@@ -52,12 +52,12 @@ class OperationsProcessor:
                 currency = operation['operationAmount']['currency']['name']
 
                 if "Счет" in from_:
-                    masked_from = f"Счет {from_[-4:]}"
+                    masked_from = f"Счет **{from_[-4:]}"
                 else:
                     masked_from = self.mask_card(from_)
 
                 if "Счет" in to_:
-                    masked_to = f"Счет {to_[-4:]}"
+                    masked_to = f"Счет **{to_[-4:]}"
                 else:
                     masked_to = self.mask_card(to_)
 
