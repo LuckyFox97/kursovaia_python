@@ -1,5 +1,5 @@
 from main_proj.main import OperationsProcessor
-from datetime import datetime
+
 
 # Создаем экземпляр класса и обрабатываем данные
 processor = OperationsProcessor()
